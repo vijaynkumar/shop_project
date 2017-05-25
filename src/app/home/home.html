@@ -1,0 +1,79 @@
+
+<div class="container-fluid">
+  <div class="row">
+     <div class="col-md-12 top-nav-container">
+            <nav class="navbar navbar-fixed-top top-nav">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header pad20">
+                  <a class="navbar-brand" href="#">Shop</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse pad20" id="upper-nav">
+                  <ul class="nav navbar-nav">
+                    <li class="active"><a href="#"> Home </a></li>
+                  </ul>
+                  <ul class="nav navbar-nav margin20 pull-right">
+                    <li class="active"><a href="javascript:void(0)" ng-click="home.openNotification()"><i class="fa fa-2x fa-bell" aria-hidden="true"></i></a></li>
+                    <li class="active"><a href="#"> Hi Vijay</a></li>
+                  </ul>
+                </div>
+           </nav>
+           <div class="col-md-12">
+      <div class="layout-container">
+        <div class="col-md-offset-3 col-md-6 image-container">
+          <div class="col-md-12 image-box"><img ngf-src="picFile" class="thumb" height="318" width="552"></div>
+          <textarea class="requirement-box" placeholder="What do you want"></textarea>
+          <div class="col-md-12">
+            <!-- <input type="file" id="trigger" onchange="angular.element(this).scope().setFile(this)" accept="image/*"> -->
+            <div class="btn-continer text-center">
+              <button class="btn btn-primary browse-btn" ngf-select ng-model="picFile" name="file" ngf-pattern="'image/*'"
+              ngf-accept="'image/*'" ngf-max-size="20MB" ngf-min-height="100">Select Image</button>
+              <input type="button" class="btn btn-primary browse-btn" value="Submit" name="">
+            </div>
+          </div>
+        </div>
+       <!--  <div class="col-md-4 requirement-container">
+           <div class="col-md-12">
+             <textarea class="requirement-box" placeholder="What do you want"></textarea>
+           </div>
+           <div class="col-md-12 text-center"><input type="button" class="btn btn-primary" value="Submit" name=""></div>
+        </div> -->
+         <!-- <div map-lazy-load="https://maps.google.com/maps/api/js"
+       map-lazy-load-params="{{home.mapUrl}}">
+     <ng-map default-style="false" center="41,-87" zoom="3"></ng-map>
+     </div>  -->
+      </div>
+    </div> 
+    </div>
+    <div ng-class ="{'width0':!home.isNotificationOpen , 'width250':home.isNotificationOpen}" class="notification">
+      <a href="javascript:void(0)" class="closebtn" ng-click="home.closeNotification()">&times;</a>
+      <ul class="list-box">
+        <li>Notification1</li>
+        <li>Notification2</li>
+        <li>Notification3</li>
+        <li>Notification4</li>
+        <li>Notification5</li>
+        <li>Notification6</li>
+      </ul>
+    </div>
+    <div ng-class ="{'width100':!home.isExpand , 'width250':home.isExpand}"  class="side-menu">
+      <div>
+        <a  ng-if="!home.isExpand" href="javascript:void(0)" class="closebtn" ng-click="home.expandNav()"><i class="fa fa-arrow-right" aria-hidden="true"></i>
+      </a>
+      <a ng-if="home.isExpand" href="javascript:void(0)" class="closebtn" ng-click="home.collapseNav()"><i class="fa fa-arrow-left" aria-hidden="true"></i>
+      </a>
+      </div>
+      <ul class="list-box">
+        <li><a href="javascript:void(0)"><i class="fa fa-2x fa-users" aria-hidden="true"></i> <span ng-if="home.isExpand"> Order</span></a></li>
+        <li><a href="javascript:void(0)"><i class="fa fa-2x fa-history" aria-hidden="true"></i><span ng-if="home.isExpand">History</span></a></li>
+        <li><a href="javascript:void(0)"><i class="fa fa-2x fa-first-order" aria-hidden="true"></i><span ng-if="home.isExpand">Status</span></a></li>
+        <li><a href="javascript:void(0)"><i class="fa fa-2x fa-phone" aria-hidden="true"></i><span ng-if="home.isExpand">Address</span></a></li>
+        <li><a href="javascript:void(0)"><i class="fa fa-2x fa-print" aria-hidden="true"></i> <span ng-if="home.isExpand">Order Type</span></a></li>
+        <li><a href="javascript:void(0)"><i class="fa fa-2x fa-snowflake-o" aria-hidden="true"></i> <span ng-if="home.isExpand">Track</span></a></li>
+      </ul>
+     <!--  <span><i class="fa fa-2x fa-first-order" aria-hidden="true"></i></span>
+      <span><i class="fa fa-2x fa-history" aria-hidden="true"></i><span> -->
+    </div>
+  </div>
+</div>

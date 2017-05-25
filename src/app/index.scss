@@ -1,0 +1,330 @@
+/**
+ *  If you want to override some bootstrap variables, you have to change values here.
+ *  The list of variables are listed here bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss
+ */
+$navbar-inverse-link-color: #5AADBB;
+$icon-font-path: "../../bootstrap-sass/assets/fonts/bootstrap/";
+
+/**
+ *  Do not remove the comments below. It's the markers used by wiredep to inject
+ *  sass dependencies when defined in the bower.json of your dependencies
+ */
+// bower:scss
+// endbower
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
+html, body {height: 100%; overflow: hidden;}
+body{
+  font-family: 'Roboto', sans-serif;
+  background-color:papayawhip;
+  padding:0px;
+  overflow: auto; 
+}
+.login-container{
+    padding-bottom:50px;
+    background-color: white;
+    margin-top: 4%;
+    box-shadow: 0px 1px 2px 2px #ccc;
+    border-radius: 0px;
+}
+.login-btn-box{
+  margin-top:10px;
+}
+.login-left-sidebars{
+  padding-top: 250px;
+  padding-left: 109px;
+}
+.login-right-sidebars{
+  padding-top: 250px;
+  padding-left: 160px;
+}
+.loginbox{
+    padding: 30px;
+}
+.fb-social-btn{
+  width:100%;
+  background-color:white;
+  color:blue;
+  border:1px solid blue;
+  height: 35px;
+}
+.google-social-btn{
+  width:100%;
+  background-color:white;
+  color:red;
+  border:1px solid red;
+  height: 35px;
+}
+.social-btn-image{
+  margin-top: -10px;
+  width: 135px;
+  margin-left: -14px;
+  height:34px;
+}
+.login-btn{
+	  width: 100%;
+
+}
+.keeplogin
+{
+  padding-bottom: 10px;
+}
+.register-text-container{
+	margin-top: 10px;
+    font-size: 14px;
+    text-decoration:underline;
+    font-color:blue !important;
+
+}
+ 
+.joinus-text{
+  margin-left:75px;
+}
+.login-header-text{
+    font-weight: 400;
+	  font-size:20px;
+}
+.login-header-container{
+	padding-top:5px;
+	padding-bottom:5px;
+}
+.login-nav{
+	  height: 60px;
+    border-bottom: solid 1px #b70b0b;
+    padding: 17px;
+    font-size: 18px;
+    font-style: italic;
+    color: navy;
+}
+.registration-form{
+  background-color: white;
+  width: 77%;
+  margin-left: 12%;
+  border:none;
+
+}
+
+.modal-content{
+  border:none;
+}
+.orText{
+  margin-left: 33px;
+  font-size: 20px;
+}
+.registration-type-btn{
+  color: royalblue;
+  background-color: white;
+  width: 39%;
+  border-color: red;
+}
+.search-box{
+  margin-top:120%;
+}
+.top-nav{
+  background-color: floralwhite;
+  border-radius: 0px;
+  height: 80px;
+  box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.14),
+  0px 2px 2px 0px rgba(0,0,0,0.098), 0px 1px 5px 0px rgba(0,0,0,0.084);
+}
+.top-nav a, .side-menu a{
+  color: maroon;
+  text-decoration:none;
+}
+.nav > li > a:hover, .nav > li > a:focus{
+ background-color: floralwhite;
+ }
+.top-sub-nav{
+  border:1px solid #ccc;
+  background-color: white;
+  border-radius: 0px;
+  margin-top:80px;
+  height: 60px;
+  box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.14),
+  0px 2px 2px 0px rgba(0,0,0,0.098), 0px 1px 5px 0px rgba(0,0,0,0.084);
+}
+.top-nav-container{
+  padding:0px;
+  margin:auto;
+}
+.layout-container{
+  margin-left: 75px;
+  margin-right: 75px;
+  margin-top: 7%;
+  z-index:1024;
+  box-shadow: 0px 1px 3px #ccc;
+}
+.map-layout-container{
+  margin-left:-2px;
+  background-color: white;
+  height: 500px;
+  margin-top: 150px;
+  z-index:1024;
+  box-shadow: 0px 1px 3px #ccc;
+}
+.pad20{
+  padding:20px;
+}
+.margin20{
+  margin-right:20px;
+}
+.top20{
+  margin-top:20px;
+}
+.upload-textbox{
+  margin-top: 11px;
+  width: 500px;
+  margin-left: 75%;
+  padding: 5px;
+  font-size: 18px;
+  border: 1px solid blue;
+  padding-left: 7px;
+  padding-right: 90px;
+  border-radius:3px;
+}
+.upload-btn{
+  margin-left: 147%;
+  margin-top: -58px;
+  background-color: blue;
+  color: white;
+  font-size: 18px;
+}
+.sub-nav{
+  margin-right:34px;
+}
+.image-box{
+    height: 330px;
+    border: 1px dotted brown;
+    margin-top: 15px;
+    text-align: center;
+    padding: 5px;
+}
+.image-container{
+    padding-bottom:15px;
+    background-color: white;
+    margin-top: 1%;
+    box-shadow: 0px 1px 2px 2px #ccc;
+    border-radius: 0px;
+}
+.requirement-container{
+    padding-bottom:15px;
+    background-color: white;
+    margin-top: 0%;
+    box-shadow: 0px 1px 2px 2px #ccc;
+    border-radius: 0px;
+}
+.requirement-box{
+    margin-top: 15px;
+    margin-left: 0px;
+    margin-bottom: 10px;
+    height: 75px;
+    width: 100%;
+    resize: none;
+    padding: 5px;
+}
+.browse-btn{
+    width: 20%;
+    background-color: maroon;
+}
+.btn-continer .browse-btn:hover{
+  background-color:maroon;
+}
+.side-menu{
+    height: 100%;
+    width: 70px;
+    position: fixed;
+    z-index: 1000;
+    top: 80px;
+    left: 0;
+    background-color: peachpuff;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+.notification {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1100;
+    top: 0;
+    right: 0;
+    background-color: peachpuff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.side-menu a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.side-menu .closebtn {
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    position: absolute;
+    top:0px;
+    right: 0px;
+    margin-left: 50px;
+}
+.notification a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.notification a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.notification .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .notification {padding-top: 15px;}
+  .notification a {font-size: 18px;}
+}
+.width100{
+  width:70px;
+}
+.width250{
+  width:250px;
+}
+.width0{
+  width:0px;
+}
+.list-box li{
+  padding-left: 25px;
+  box-shadow: 1px 1px 1px chocolate;
+  height: 60px;
+  padding-top: 15px
+}
+.list-box{
+  margin-left: -40px;
+  list-style: none;
+  margin-top: 25px;
+  line-height: 3;
+}
+.list-box span{
+  padding-left: 15px;
+  font-size: 15px;
+}
+ng-map {width:98%; height:77%;position: absolute;}
+/**
+ *  Do not remove the comments below. It's the markers used by gulp-inject to inject
+ *  all your sass files automatically
+ */
+// injector
+// endinjector
+
+
+
